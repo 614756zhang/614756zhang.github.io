@@ -60,8 +60,8 @@ navs:
     label: Home
 
   -
-    href: /spring-boot.html
-    label: Spring-Boot
+    href: /spring.html
+    label: Spring
 
   -
     href: /spring-cloud.html
@@ -96,20 +96,20 @@ labels:
     name: 架构
     
   -
-    href: /jvm.html
-    name: Jvm
+    href: /log.html
+    name: 日志
 
   -
-    href: /fastdfs.html
-    name: FastDFS
+    href: /database.html
+    name:数据库
 
   -
-    href: /mongodb.html
-    name: MongoDB
+    href: /data.html
+    name: 数据持久
 
   -
-    href: /docker.html
-    name: Docker
+    href: /config.html
+    name: 配置详解
 
   -
     href: /open-source.html
