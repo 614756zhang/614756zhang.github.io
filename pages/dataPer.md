@@ -1,12 +1,12 @@
 ---
 layout: page
-title: MongoDB 系列文章
-titlebar: MongoDB
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; MongoDB 系列教程
-menu: mongodb
+title: 数据持久层 系列文章
+titlebar: 数据持久层
+subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 数据持久层 系列教程
+menu: dataPer
 css: ['blog-page.css']
-permalink: /mongodb
-keywords: MongoDB,MongoDB 集群,部署,搭建,MongoDB 教程
+permalink: /dataPer
+keywords: 数据持久层配置应用,Mybatis,Ibatis,Driud,JDBC等
 ---
 
 <div class="row">
@@ -15,7 +15,7 @@ keywords: MongoDB,MongoDB 集群,部署,搭建,MongoDB 教程
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='mongodb'  or post.keywords contains 'mongodb' %}
+                {% if post.category=='dataPer'  or post.keywords contains 'dataPer' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
