@@ -3,7 +3,7 @@ layout: page
 title: 日志系列文章
 titlebar: 日志
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 日志系列文章
-menu: jvm
+menu: log
 css: ['blog-page.css']
 permalink: /log
 ---
