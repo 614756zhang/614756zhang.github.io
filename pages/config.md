@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 配置详解 系列文章
-titlebar: docker
+titlebar: 配置详解
 subtitle: <span class="mega-octicon octicon-flame"></span>&nbsp;&nbsp; 配置详解 系列教程
 menu: config
 css: ['blog-page.css']
