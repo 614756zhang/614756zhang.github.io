@@ -1,11 +1,11 @@
 ---
 layout: page
-title: FastDFS系列文章
+title: 数据库系列文章
 titlebar: FastDFS
-subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; FastDFS系列文章
-menu: fastdfs
+subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; 数据库系列文章
+menu: database
 css: ['blog-page.css']
-permalink: /fastdfs
+permalink: /database
 ---
 
 <div class="row">
@@ -14,7 +14,7 @@ permalink: /fastdfs
 
         <ul id="posts-list">
             {% for post in site.posts %}
-                {% if post.category=='FastDFS' or post.keywords contains 'FastDFS' %}
+                {% if post.category=='database' or post.keywords contains 'database' %}
                 <li class="posts-list-item">
                     <div class="posts-content">
                         <span class="posts-list-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
