@@ -116,8 +116,8 @@ labels:
     name: 安装部署
 
   -
-    href: /problem.html
-    name: 问题解决   
+    href: /open-source.html
+    name: Code   
 
 # selected articles
 classes:
