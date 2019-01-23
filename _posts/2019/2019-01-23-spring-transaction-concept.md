@@ -7,11 +7,10 @@ keywords: Spring,spring,事物,Transaction
 ---
 
 ## 一、事务概述
-## Spring Cloud Gateway 
 
-### 1. 事务有四个特性（ACID）：
+### 1. 事务有四个特性（ACID）
 原子性、一致性、隔离性、持久性
-### 2. spring事务支持：
+### 2. spring事务支持
 Spring可以使用编程式事务，也可以使用声明式事务。一般是用声明式
 
 ## 二、Spring事务管理器
