@@ -1,6 +1,6 @@
 ---
 layout: post
-title: spring异常回滚
+title: spring事物异常回滚
 category: spring
 tags: [spring]
 keywords: spring,事物,Transaction,exception
