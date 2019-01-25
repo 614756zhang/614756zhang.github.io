@@ -10,7 +10,7 @@ title:  夜行者
 subtitle: 记录技术学习，记录成长
 name: 夜行者 
 email: zhangpengmail628@163.com
-description: 本站是努力点总没错的技术分享博客。
+description: 本站是夜行者的技术分享博客。
 keywords: 614756zhang,夜行者,Spring
 encoding: "utf-8"
 favicon: favicon.png 
@@ -98,6 +98,10 @@ labels:
   -
     href: /log.html
     name: 日志
+
+  -
+    href: /java.html
+    name: java基础
 
   -
     href: /database.html
