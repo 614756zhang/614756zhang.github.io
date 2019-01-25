@@ -56,27 +56,27 @@ paginate_path: 'page:num'
 navs:
 
   -
-    href: /zhangpeng/
+    href: /
     label: Home
 
   -
-    href: /zhangpeng/spring.html
+    href: /spring.html
     label: Spring
 
   -
-    href: /zhangpeng/spring-cloud.html
+    href: /spring-cloud.html
     label: Spring-Cloud
 
   -
-    href: /zhangpeng/archives.html
+    href: /archives.html
     label: Archives
 
   -
-    href: /zhangpeng/link.html
+    href: /link.html
     label: Link
 
   -
-    href: /zhangpeng/about.html
+    href: /about.html
     label: About
 
 
@@ -84,55 +84,55 @@ navs:
 labels:
 
   -
-    href: /zhangpeng/life.html
+    href: /life.html
     name: 故事
 
   -
-    href: /zhangpeng/frontEnd.html
+    href: /frontEnd.html
     name: 前端
 
   -
-    href: /zhangpeng/arch.html
+    href: /arch.html
     name: 架构
     
   -
-    href: /zhangpeng/log.html
+    href: /log.html
     name: 日志
 
   -
-    href: /zhangpeng/java.html
+    href: /java.html
     name: java基础
 
   -
-    href: /zhangpeng/database.html
+    href: /database.html
     name: 数据库
 
   -
-    href: /zhangpeng/dataPer.html
+    href: /dataPer.html
     name: 数据持久
 
   -
-    href: /zhangpeng/config.html
+    href: /config.html
     name: 配置详解
 
   -
-    href: /zhangpeng/deploy.html
+    href: /deploy.html
     name: 安装部署
 
   -
-    href: /zhangpeng/open-source.html
+    href: /open-source.html
     name: Code   
 
 # selected articles
 classes:
 
   -
-    href: /zhangpeng/life.html
+    href: /life.html
     name: 我的故事
     describe: 生活就是故事，故事就是生活
 
   -
-    href: /zhangpeng/arch.html
+    href: /arch.html
     name: 架构师之路
     describe: 一个架构师的自我修养
 
