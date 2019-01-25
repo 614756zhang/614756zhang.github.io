@@ -56,11 +56,11 @@ paginate_path: 'page:num'
 navs:
 
   -
-    href: /
+    href: {{ site.baseurl }}/
     label: Home
 
   -
-    href: /spring.html
+    href: {{ site.baseurl }}/spring.html
     label: Spring
 
   -
