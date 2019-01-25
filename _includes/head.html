@@ -10,34 +10,34 @@
     <meta name="description"
           content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="123" href="{{ page.url }}">
-    <link rel="456" href="{{page.url |prepend: site.baseurl }}">
-    <link rel="789" href="{{page.url |prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+    <!--<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">-->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 
+    <!--<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">-->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.url }}">
+    
     <!-- Third-Party CSS -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
-    <link rel="stylesheet" href="/bower_components/hover/css/hover-min.css">
-    <link rel="stylesheet" href="/bower_components/primer-markdown/dist/user-content.min.css">
-    <link rel="stylesheet" href="/assets/css/syntax.css">
+    <link rel="stylesheet" href="{{ site.url }}/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/bower_components/octicons/octicons/octicons.css">
+    <link rel="stylesheet" href="{{ site.url }}/bower_components/hover/css/hover-min.css">
+    <link rel="stylesheet" href="{{ site.url }}/bower_components/primer-markdown/dist/user-content.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">-->
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/common.css">
 
     <!-- CSS set in page -->
     {% for css in page.css %}
-    <link rel="stylesheet" href="/assets/css/{{css}}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/{{css}}">
     {% endfor %}
 
     <!-- CSS set in layout -->
     {% for css in layout.css %}
-    <link rel="stylesheet" href="/assets/css/{{css}}">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/{{css}}">
     {% endfor %}
 
-    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.url }}/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </head>
