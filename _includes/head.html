@@ -11,6 +11,9 @@
           content="{% if page.excerpt %}{{ page.excerpt | escape }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="123" href="{{ page.url }}">
+    <link rel="456" href="{{page.url |prepend: site.baseurl }}">
+    <link rel="789" href="{{page.url |prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Third-Party CSS -->
