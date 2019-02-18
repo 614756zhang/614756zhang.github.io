@@ -81,3 +81,5 @@ Spring只提供事务管理器的接口，具体内容有各个事务管理器�
 ### 5. 回滚规则
 
 哪些异常会导致事务回滚而哪些不会。默认情况下，事务只有遇到运行期异常时才会回滚，而在遇到检查型异常时不会回滚
+
+[个人博客主页](https://614756zhang.github.io/zhangpeng/) - [微博](http://weibo.com/614756zhang) - [Github](https://github.com/614756zhang)
