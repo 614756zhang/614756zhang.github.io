@@ -75,5 +75,3 @@ lon == in 的结果为：true
 其转换顺序为：
 byte--->short--->int--->long--->float--->double
 char-->int-->.......(后面同上)
-
-[个人博客主页](https://614756zhang.github.io/zhangpeng/) - [微博](http://weibo.com/614756zhang) - [Github](https://github.com/614756zhang)

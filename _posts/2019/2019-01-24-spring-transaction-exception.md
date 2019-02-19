@@ -66,5 +66,3 @@ Transactional的异常控制，默认也是checkException不回滚，uncheckExce
 **如果配置了rollbackFor 和 noRollbackFor 且两个都是用同样的异常，那么遇到该异常，还是回滚**
 
 rollbackFor和noRollbackFor配置也许不会含盖所有异常，对于遗漏的继续按照checkException不回滚，uncheckException回滚
-
-[个人博客主页](https://614756zhang.github.io/zhangpeng/) - [微博](http://weibo.com/614756zhang) - [Github](https://github.com/614756zhang)
