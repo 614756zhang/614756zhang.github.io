@@ -8,12 +8,12 @@ keywords: SpringTest,JUnit
 
 **前言：** 测试是一个开发人员在开发后必需的环节，单元测试在实际工作中有很频繁的应用，当你只想测试某一模块而非启动整个项目时，单元测试就体现了它的意义了，本文叙述一种SpringTest与JUnit结合的单元测试方法。
 
-### 一、环境背景
+## 一、环境背景
 - IDE：eclipse
 - 项目构建工具：gradle
 - 项目框架：spring+activiti（本人研究工作流临时搭建的demo）
 
-### 二、SpringTest和JUnit引入
+## 二、SpringTest和JUnit引入
 在原有工程的build.gradle中的dependencies下加入SpringTest和JUnit的jar包依赖关系：
 ```gradle
     testCompile 'junit:junit:4.12'
@@ -23,7 +23,7 @@ keywords: SpringTest,JUnit
 
 *上诉为gradle工程的方式，maven工程请添加maven格式的依赖配置，普通工程请直接下载jar到工程下（所需jar包junit-4.12.jar、hamcrest-core-1.3.jar、spring-test-4.1.5.RELEASE.jar）*
 
-### 三、单元测试配置
+## 三、单元测试配置
 ##### 1、要测试的类上加测试注解
 ```java
 @RunWith(SpringJUnit4ClassRunner.class) //使用junit4进行测试
