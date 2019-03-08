@@ -36,6 +36,9 @@ keywords: dubbo,dubbo.properties,dubbo配置文件路径,架构,config
 
 **代码示例：**
 ```java
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import com.alibaba.dubbo.common.Constants;
 public class DubboServletContextListener implements ServletContextListener  {
 
 	@Override
