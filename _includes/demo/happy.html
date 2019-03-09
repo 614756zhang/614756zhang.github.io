@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>动画</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+<!-- 女生节动画 -->
+<canvas id="c" style="z-index: 99999; position: absolute; top:15%"></canvas>
+<script>
+        //获取当前月份
+        function getCurrentMonth1(){
+            var now = new Date();
+            var month = now.getMonth(now) + 1;
+            if(month < 10){
+                month = "0"+month;
+            }
+            return month;
+        }
+
+        //获取当前日
+        function getCurrentDay1(){
+             var now = new Date();
+            var day = now.getDate();
+            if(day < 10){
+                day = "0" + day;
+            }
+            return day;
+        }
+
+        //var formatDate = getCurrentMonth1()+"-"+getCurrentDay1();
+        //if((formatDate === '03-07'||formatDate === '03-08')){
+            var b = document.body;
+            var c = document.getElementsByTagName('canvas')[0];
+            var a = c.getContext('2d');
+
+            setTimeout(function(){
+				document.getElementById("c").onmouseup();
+                //$("#c").trigger("mouseup");
+				
+            },8000);
+
+            setTimeout(function(){
+				var idObject = document.getElementById('c');
+				if (idObject != null){
+					idObject.parentNode.removeChild(idObject);
+				}
+                //$("#c").remove();
+            },12000);
+        //}else{
+			//$("#c").remove();
+		//}
+</script>
+<script>
+    eval('var M=Math,n=M.pow,i,E=2,F="rgba(253,73,95,",d=M.cos,z=M.sin,L=1,u=30,W=window,w=c.width=W.innerWidth,h=c.height=W.innerHeight,r=_1){return M.random()*2-1},y="px 微软雅黑",v="女神节 快乐",q="♥",X=w/2,Y=h/2,T=4,p=_1){var e=this;e.g=_1){e.x=X;e.y=Y;e.k=0;e.l=0;e.t=M.random()*19000;e.c=e.t};e.d=_1){a.fillStyle=F+(e.c/e.t)+")";a.fillText(q,e.x,e.y);e.c-=50;e.x+=e.k;e.y+=e.l;e.k=e.k+r();e.l=e.l+r();if(e.c<0||e.x>w||e.x<0||e.y>h||e.y<0){e.g()}};e.g()},A,B;a.textAlign="center";a.strokeStyle="#92d6f3";a.lineWidth=0;for(i=0;i<350;i++){M[i]=new p()}setInterval(_1){a.clearRect(0,0,w,h);a.font=u+y;X=(w/6*n(z(T),3)+w/2);Y=0.8*(-h/40*(13*d(T)-5*d(2*T)-2*d(3*T)-d(4*T))+h/2.3);T+=(z(T)+3)/99;for(i=0;i<350;i++){with(M[i]){A=(x/w-0.5)*2,B=-(y/h-0.5);if(L&&(A*A+2*n((B-0.5*n(M.abs(A),0.5)),2))>0.11){k=l=0}d()}}a.font=50+y;if(E>0.1){if(E<1){a.fillStyle=F+E+")";a.fillText("",w/2,h/2)}E-=0.02}a.fillStyle="#92d6f3";a.fillText(v,X,Y+u);a.strokeText(v,X,Y+u)},50);b.bgColor="#FFEFF2";c.onmouseup=_1){L=(L)?0:1}'.replace(/(_1)/g,'function('))
+
+</script>
+<!-- 女生节动画 end-->
+</body>
+</html>
