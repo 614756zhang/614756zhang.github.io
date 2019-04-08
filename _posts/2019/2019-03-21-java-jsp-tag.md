@@ -78,20 +78,6 @@ keywords: TLD文件配置详解,TLD,config,jsp自定义标签
 
 ```java
 
-package com.tydic.ppm.webapp.taglib;
-
-import java.io.IOException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.tagext.BodyTagSupport;
-import org.apache.commons.lang.StringUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-
-import com.tydic.framework.utils.spring.SpringContextUtils;
-import com.tydic.ppm.service.DataDictService;
-import com.tydic.ppm.vo.DictBeanVO;
-
 /**
 * 可继承BodyTagSupport
 * 重载BodyTagSupport类的方法
@@ -200,6 +186,7 @@ public class ShowTipTag extends BodyTagSupport {
 	}
 	
 }
+
 
 ```
 
