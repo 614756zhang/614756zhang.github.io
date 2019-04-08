@@ -75,7 +75,9 @@ keywords: TLD文件配置详解,TLD,config,jsp自定义标签
         III、<type>java.lang.String</type>属性值类型
 ## 二、标签类
 在上述tagclass中，配置了标签类，那么就需要有相对应的类去实现了，这里就需要在本地新建一个类来完成了，一个tag需要对应一个类，这里用showTip示例:
+
 ```java
+
 package com.tydic.ppm.webapp.taglib;
 
 import java.io.IOException;
@@ -200,6 +202,7 @@ public class ShowTipTag extends BodyTagSupport {
 }
 
 ```
+
 **说明：** 
 
 配置中的attribute的name和类中的属性名称和类型对应
