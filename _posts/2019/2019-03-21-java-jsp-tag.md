@@ -97,8 +97,6 @@ public class ShowTipTag extends BodyTagSupport {
 	private String defaultDesc="请配置功能使用说明！"; // 默认提示
 	private String disabled;
 
-	
-
 	public int doEndTag() throws JspException {
 		try {
 			if (StringUtils.isBlank(fnId)) {
