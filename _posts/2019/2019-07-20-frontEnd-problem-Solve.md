@@ -18,7 +18,7 @@ Ajax请求后台，后台返回json数据，在IE浏览器弹出XXX.json下载�
 response.setContentType("text/html;charset=UTF-8");
 ```
 2. 前台修改请求参数中的dataType为html
-```js
+```
 var options  = {
 			url:url,
 			dataType:'html',
