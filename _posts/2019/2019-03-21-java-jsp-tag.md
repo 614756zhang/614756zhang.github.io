@@ -1,10 +1,13 @@
 ---
 layout: post
-title: TLD文件配置详解（jsp自定义标签）
+title: jsp自定义标签
 category: config
 tags: [tld]
 keywords: TLD文件配置详解,TLD,config,jsp自定义标签
 ---
+## 前言
+在jsp的开发中，为了提高开发效率定制标签会被频繁使用，除了常用的JSTL标签库外，往往需要在工程中自己定义符合本项目需求的定制标签，本文即详细说明如何自定义标签
+
 ## 一、配置详解
 **配置样例：**
 ```xml
@@ -75,7 +78,6 @@ keywords: TLD文件配置详解,TLD,config,jsp自定义标签
         III、<type>java.lang.String</type>属性值类型
 ## 二、标签类
 在上述tagclass中，配置了标签类，那么就需要有相对应的类去实现了，这里就需要在本地新建一个类来完成了，一个tag需要对应一个类，这里用showTip示例:
-
 ```java
 
 /**
@@ -96,6 +98,8 @@ public class ShowTipTag extends BodyTagSupport {
 	private String fnId; // 功能使用说明ID
 	private String defaultDesc="请配置功能使用说明！"; // 默认提示
 	private String disabled;
+
+	
 
 	public int doEndTag() throws JspException {
 		try {
@@ -185,9 +189,7 @@ public class ShowTipTag extends BodyTagSupport {
 	
 }
 
-
 ```
-
 **说明：** 
 
 配置中的attribute的name和类中的属性名称和类型对应

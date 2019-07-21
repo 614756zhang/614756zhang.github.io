@@ -21,6 +21,3 @@ keywords: 动画
 放到了这篇博客中
 
 {% include demo/happy.html %}
-{% include https://github.com/614756zhang/smallTools/blob/master/mybatisTool/ibatis2mybatis.html %}
-
-123123
