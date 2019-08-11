@@ -48,13 +48,13 @@ F-->H(Kibana)
 
 ## 二、组件部署安装
 ### 1、Elasticsearch安装部署
- <a href="{{ post.url | prepend: site.baseurl}}/deploy/2019/08/11/deploy-Elasticsearch.html">详见Elasticsearch安装部署</a>
+ <a href="deploy-Elasticsearch.html">详见Elasticsearch安装部署</a>
 ### 2、Kibana安装部署
- <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl }}/deploy/2019/08/11/deploy-Kibana.html">详见Kibana安装部署安装部署</a>
+ <a href="deploy-Kibana.html">详见Kibana安装部署安装部署</a>
 ### 3、Logstash安装部署
- <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl }}/deploy/2019/08/11/deploy-Logstash.html">详见Logstash安装部署</a>
+ <a href="deploy-Logstash.html">详见Logstash安装部署</a>
 ### 4、Filebeat安装部署
- <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl}}/deploy/2019/08/11/deploy-Filebeat.html">详见Filebeat安装部署</a>
+ <a href="deploy-Filebeat.html">详见Filebeat安装部署</a>
 
 ## 三、组件连接
 ### 1、各组件说明：
