@@ -8,19 +8,7 @@ keywords: ELK,Elasticsearch,Logstash,Filebeat,Kibana,deploy,安装部署
 ## 前言：
 **架构图：**
 
-```mermaid
-graph LR
-subgraph Elasticsearch
-    E(dataNode1)
-    F(masterNode)
-    G(dataNode2)
-end
-A(Filebeat)-->D(Logstash)
-B(Filebeat)-->D
-C(Filebeat)-->D
-D-->F
-F-->H(Kibana)
-```
+![]({{ site.url }}{{ site.baseurl }}/assets/images/2019/2019-08-11-deploy-ELK.jpg)
 
 ## 一、环境准备
 ### 三台虚拟机
