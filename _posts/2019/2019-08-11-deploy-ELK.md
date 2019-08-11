@@ -8,7 +8,7 @@ keywords: ELK,Elasticsearch,Logstash,Filebeat,Kibana,deploy,安装部署
 ## 前言：
 **架构图：**
 
-```
+```mermaid
 graph LR
 subgraph Elasticsearch
     E(dataNode1)
