@@ -48,13 +48,13 @@ F-->H(Kibana)
 
 ## 二、组件部署安装
 ### 1、Elasticsearch安装部署
- <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">详见Elasticsearch安装部署</a>
+ <a href="{{ post.url | prepend: site.baseurl}}/deploy/2019/08/11/deploy-Elasticsearch.html">详见Elasticsearch安装部署</a>
 ### 2、Kibana安装部署
- <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">详见Kibana安装部署安装部署</a>
-### 3、logstash安装部署
- <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">详见logstash安装部署</a>
+ <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl }}/deploy/2019/08/11/deploy-Kibana.html">详见Kibana安装部署安装部署</a>
+### 3、Logstash安装部署
+ <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl }}/deploy/2019/08/11/deploy-Logstash.html">详见Logstash安装部署</a>
 ### 4、Filebeat安装部署
- <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">详见Filebeat安装部署</a>
+ <a class="posts-list-name bubble-float-left" href="{{ post.url | prepend: site.baseurl}}/deploy/2019/08/11/deploy-Filebeat.html">详见Filebeat安装部署</a>
 
 ## 三、组件连接
 ### 1、各组件说明：
@@ -62,6 +62,7 @@ F-->H(Kibana)
 - Kibana是前台展示，目的是将从Elasticsearch中获取到的检索数据可视化展示和操作；
 - Logstash 可做日志收集和过滤，但由于其相对的重量级（安装包大，运行占内存高等），现有大多只用它过滤日志，而非采集；
 - Filebeat是日志采集，监控到指定日志文件添加后采集到其配置对应的输出方，轻量级，对被采集的日志和应用无影响，无感知；
+
 ### 2、各组件配置说明：
 - Elasticsearch ，配置分配好集群的mater和node节点分配、node节点的主备、数据分片的规则（有需要的话）即可；
 - Kibana 配置好自己的ip和端口以及Elasticsearch集群地址就行了；
