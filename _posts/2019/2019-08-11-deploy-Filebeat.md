@@ -8,7 +8,7 @@ keywords: ELK,Kibana,deploy,Filebeat安装部署,ELK安装部署
 ##### （1）、直接下载或上传安装包
 ##### （2）、解压安装包到指定目录(/home/elk)
 ```
-tar zxvf filebeat-6.3.2-linux-x86_64.tar.gz -C /home/elk/
+tar -zxvf filebeat-6.3.2-linux-x86_64.tar.gz -C /home/elk/
 cd  /home/elk/filebeat-6.3.2-linux-x86_64
 ```
 ##### （3）、配置filebeat .yml

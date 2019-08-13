@@ -9,7 +9,7 @@ keywords: ELK,Elasticsearch,deploy,Elasticsearch安装部署,ELK安装部署
 ##### （1）、直接下载或上传安装包  
 ##### （2）、解压安装包到指定目录(/home/elk)  
 ```
-tar zxvf elasticsearch-6.3.2.tar.gz -C /home/elk/
+tar -zxvf elasticsearch-6.3.2.tar.gz -C /home/elk/
 cd  /home/elk/elasticsearch-6.3.2
 ```
 ##### （3）、修改config/elasticsearch.yml配置  

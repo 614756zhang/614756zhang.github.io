@@ -8,7 +8,7 @@ keywords: ELK,Kibana,deploy,Kibana安装部署,ELK安装部署
 ##### （1）、直接下载或上传安装包
 ##### （2）、解压安装包到指定目录(/home/elk)
 ```
-tar zxvf tar -zxvf kibana-6.3.2-linux-x86_64.tar.gz -C /home/elk/
+tar -zxvf kibana-6.3.2-linux-x86_64.tar.gz -C /home/elk/
 cd  /home/elk/kibana-6.3.2-linux-x86_64
 ```
 ##### （3）、修改配置文件：kibana.yml

@@ -7,8 +7,10 @@ keywords: ELK,Kibana,deploy,Logstash安装部署,ELK安装部署
 ---
 ##### （1）、直接下载或上传安装包
 ##### （2）、解压安装包到指定目录(/home/elk)
-tar zxvf logstash-6.3.2.tar.gz -C /home/elk/
+```
+tar -zxvf logstash-6.3.2.tar.gz -C /home/elk/
 cd  /home/elk/logstash-6.3.2
+```
 ##### （3）、创建自己的配置文件
 ```
 vi config/first-pipeline.conf
