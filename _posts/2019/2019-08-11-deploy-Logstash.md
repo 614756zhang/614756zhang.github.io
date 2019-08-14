@@ -6,6 +6,7 @@ tags: [ELK安装部署]
 keywords: ELK,Kibana,deploy,Logstash安装部署,ELK安装部署
 ---
 ## Logstash安装步骤
+
 ##### （1）、直接下载或上传安装包
 ##### （2）、解压安装包到指定目录(/home/elk)
 ```
