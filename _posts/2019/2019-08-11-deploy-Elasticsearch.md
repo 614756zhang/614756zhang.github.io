@@ -135,8 +135,7 @@ vi /etc/sysctl.conf
 #elasticsearch添加配置
 vm.max_map_count=655360
 ```
-并执行命令：
-sysctl -p
+并执行命令：sysctl -p  
 然后重新启动elasticsearch，即可启动成功。
 
 - 问题5：

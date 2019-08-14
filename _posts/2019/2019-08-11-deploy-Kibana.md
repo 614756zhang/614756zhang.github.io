@@ -14,7 +14,9 @@ tar -zxvf kibana-6.3.2-linux-x86_64.tar.gz -C /home/elk/
 cd  /home/elk/kibana-6.3.2-linux-x86_64
 ```
 ##### （3）、修改配置文件：kibana.yml
+```
 vi config/kibana.yml  
+```
 主要改两项
 ```
 #配置本机ip

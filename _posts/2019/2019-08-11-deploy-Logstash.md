@@ -50,8 +50,7 @@ output {
 ```
 测试配置
 ```
-./bin/logstash -f /home/elk/logstash-6.3.2/config/first-pipeline.conf --config.test_and_exit 
---config.test_and_exit 
+./bin/logstash -f /home/elk/logstash-6.3.2/config/first-pipeline.conf --config.test_and_exit
 ```
 出现Configuration OK 字样即为可以
 
@@ -59,9 +58,6 @@ output {
 ```
 cd  /home/elk/logstash-6.3.2
 ./bin/logstash -f /home/elk/logstash-6.3.2/config/first-pipeline.conf --config.reload.automatic
-
-
-nohup /home/elk/logstash-6.3.2/bin/logstash -f /home/elk/logstash-6.3.2/config/first-pipeline.conf --config.reload.automatic &
 ```
 --config.reload.automatic选项启用动态重载配置功能
 
