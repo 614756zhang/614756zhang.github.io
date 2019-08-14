@@ -13,11 +13,12 @@ tar -zxvf elasticsearch-6.3.2.tar.gz -C /home/elk/
 cd  /home/elk/elasticsearch-6.3.2
 ```
 ##### （3）、修改config/elasticsearch.yml配置  
-**集群配置修改说明：**
+**集群配置修改：**
 ```
 vi config/elasticsearch.yml
-
+```
 主节点配置：
+```
 cluster.name: cluster-node  # 集群中的名称
 node.name: master-node  # 该节点名称
 node.master: true  # 意思是该节点为主节点
@@ -28,8 +29,9 @@ discovery.zen.ping.unicast.hosts: ["192.168.50.6", "192.168.50.8"] # 配置自�
 #Memory
 bootstrap.memory_lock: false 
 bootstrap.system_call_filter: false
-
+```
 数据节点配置：
+```
 cluster.name: cluster-node  # 集群中的名称
 node.name: data-node-1  # 该节点名称
 node.master: false  # 
@@ -41,24 +43,16 @@ discovery.zen.ping.unicast.hosts: ["192.168.50.6", "192.168.50.8"] # 配置自�
 bootstrap.memory_lock: false 
 bootstrap.system_call_filter: false
 ```
-**单点配置修改说明：**
-```
-修改监听ip即可
-network.host:，并将其值设置成0.0.0.0
-#Memory
-bootstrap.memory_lock: false 
-bootstrap.system_call_filter: false
-```
+
 ##### （4）、把下面**问题解决的设置**提前设置了，不然报错了还要解决  
 ##### （5）、启动elasticsearch
 root用户无法启动elasticsearch，需要使用非root用户,
 这里我需要新建用户，非root用户忽略创建用户
 ```
-#创建用户
+#创建用户组
 groupadd elkgroup
+#创建用户及文件授权
 useradd -d /home/elk elkuser -g elkgroup
-#useradd -g elkgroup elkuser
-chown -R elkuser:elkgroup  /home/elk
 
 #切换用户
 su elkuser
