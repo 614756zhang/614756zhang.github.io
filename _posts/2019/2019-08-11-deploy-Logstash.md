@@ -33,7 +33,7 @@ output {
      #可以同时输出到多个终端
      #筛选过滤后的内容输出到终端显示
      stdout { codec => "rubydebug" }
-    
+
      #导出到elasticsearch
      elasticsearch {
         # 导出格式为json
@@ -69,10 +69,9 @@ cd  /home/elk/logstash-6.3.2
 1、增加服务器内存（土豪专用）
 2、修改默认jvm空间分配（实用）
 cd  /home/elk/logstash-6.3.2
-vi config/jvm.options 
+vi config/jvm.options
 -Xms1g
 -Xmx1g
 改为
 -Xms512m
 -Xmx512m
-
