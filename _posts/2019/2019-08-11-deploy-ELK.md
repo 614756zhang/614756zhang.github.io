@@ -63,6 +63,6 @@ Elasticsearch --> Kibana --> Logstash --> Filebeat
 
 <script type="text/javascript">
      $(document).ready(function () {
-         //$('#Kibana').load('./deploy-Kibana.html');
+         $('#Kibana').load('https://614756zhang.github.io/zhangpeng/deploy/2019/08/11/deploy-Kibana.html');
      });
 </script>
