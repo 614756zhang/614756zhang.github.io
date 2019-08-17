@@ -60,9 +60,3 @@ keywords: ELK,Elasticsearch,Logstash,Filebeat,Kibana,deploy,安装部署
 
 ### 3、启动顺序：
 Elasticsearch --> Kibana --> Logstash --> Filebeat
-
-<script type="text/javascript">
-     $(document).ready(function () {
-         $('#Kibana').load('https://614756zhang.github.io/zhangpeng/deploy/2019/08/11/deploy-Kibana.html');
-     });
-</script>
