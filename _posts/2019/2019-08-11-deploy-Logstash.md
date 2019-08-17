@@ -57,7 +57,7 @@ output {
 ##### （4）、启动命令
 ```
 cd  /home/elk/logstash-6.3.2
-./bin/logstash -f /home/elk/logstash-6.3.2/config/first-pipeline.conf --config.reload.automatic
+nohup ./bin/logstash -f /home/elk/logstash-6.3.2/config/first-pipeline.conf --config.reload.automatic &
 ```
 --config.reload.automatic选项启用动态重载配置功能
 

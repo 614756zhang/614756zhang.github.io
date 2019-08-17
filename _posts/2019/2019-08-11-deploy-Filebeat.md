@@ -40,10 +40,10 @@ setup.kibana:
 output.elasticsearch:
   hosts: ["myEShost:9200"]
   username: “filebeat_internal”
-  password: “{pwd}” 
+  password: “{pwd}”
 setup.kibana:
   host: “mykibanahost:5601″
-  username: “my_kibana_user” 
+  username: “my_kibana_user”
     password: “{pwd}”
 ```
 5）配置输出给logstash
@@ -54,5 +54,5 @@ output.logstash:
 ##### （4）、启动命令
 ```
 cd  /home/elk/filebeat-6.3.2-linux-x86_64
-./filebeat -e -c ./filebeat.yml
+nohup ./filebeat -e -c ./filebeat.yml &
 ```

@@ -27,7 +27,7 @@ elasticsearch.url: "http://192.168.50.6:9200"
 ##### （4）、启动命令
 ```
 cd  /home/elk/kibana-6.3.2-linux-x86_64
-./bin/kibana
+nohup ./bin/kibana &
 ```
 ##### （5）、验证
 ps：注意开启端口5601
