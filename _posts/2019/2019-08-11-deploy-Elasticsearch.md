@@ -28,20 +28,20 @@ network.host: 0.0.0.0  # 监听全部ip，在实际环境中应设置为一个�
 http.port: 9200  # es服务的端口号
 discovery.zen.ping.unicast.hosts: ["192.168.50.6", "192.168.50.8"] # 配置自动发现
 #Memory
-bootstrap.memory_lock: false 
+bootstrap.memory_lock: false
 bootstrap.system_call_filter: false
 ```
 数据节点配置：
 ```
 cluster.name: cluster-node  # 集群中的名称
 node.name: data-node-1  # 该节点名称
-node.master: false  # 
+node.master: false  #
 node.data: true  # 表示该节点为数据节点
 network.host: 0.0.0.0  # 监听全部ip，在实际环境中应设置为一个安全的ip
 http.port: 9200  # es服务的端口号
 discovery.zen.ping.unicast.hosts: ["192.168.50.6", "192.168.50.8"] # 配置自动发现
 #Memory
-bootstrap.memory_lock: false 
+bootstrap.memory_lock: false
 bootstrap.system_call_filter: false
 ```
 
@@ -62,7 +62,7 @@ su elkuser
 (加-d，则表示后端运行)
 
 关闭elasticsearch
-jps 
+jps
 kill -9 进程号
  ```
 ##### （6）、验证
@@ -142,12 +142,12 @@ vm.max_map_count=655360
  system call filters failed to install; check the logs and fix your configuration or disable system call filters at your own risk  
 原因： Centos6不支持SecComp，而ES5.2.0默认bootstrap.system_call_filter为true  
 解决方案：在elasticsearch.yml中配置bootstrap.system_call_filter为false，
-注意要在Memory下面: 
-bootstrap.memory_lock: false 
+注意要在Memory下面:
+bootstrap.memory_lock: false
 bootstrap.system_call_filter: false
 
 - 问题6：
-Exception in thread "main" java.nio.file.AccessDeniedException: 
+Exception in thread "main" java.nio.file.AccessDeniedException:
 /home/elk/elasticsearch-6.3.2/config/jvm.options  
 原因：使用非 root用户启动ES，该用户的文件权限不足  
 解决方案：添加用户对该文件的权限  chown -R elkuser:elkgroup  /home/elk
@@ -158,7 +158,7 @@ Exception in thread "main" java.nio.file.AccessDeniedException:
 1、增加服务器内存（土豪专用）
 2、修改elasticsearch默认jvm空间分配（实用）
 cd  /home/elk/elasticsearch-6.3.2
-vi config/jvm.options 
+vi config/jvm.options
 -Xms2g
 -Xmx2g
 改为
