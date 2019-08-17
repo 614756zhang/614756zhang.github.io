@@ -36,7 +36,7 @@ keywords: ELK,Elasticsearch,Logstash,Filebeat,Kibana,deploy,安装部署
 
 ## 二、组件部署安装
 ### 1、Elasticsearch安装部署
-    {% include 2019/08/11/deploy-Elasticsearch.html %}
+{% include 2019/08/11/deploy-Elasticsearch.html %}
 ### 2、Kibana安装部署
  <a href="deploy-Kibana.html">详见Kibana安装部署安装部署</a>
 ### 3、Logstash安装部署
